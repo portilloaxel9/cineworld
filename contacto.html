@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Contacto | CineWorld</title>
+    <meta charset="UTF-8">
 	<link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
@@ -11,7 +12,7 @@
 			<a href="index.html">Inicio</a>
 			<a href="peliculas.html">Pel&iacuteculas</a>
 			<a href="noticias.html">Noticias</a>
-			<a href="#" style="font-weight: bold;">Contacto</a>
+			<a href="contacto.html" style="font-weight: bold;">Contacto</a>
 		</nav>
 	</header>
 	<main>
@@ -19,7 +20,7 @@
 			<img src="./img/banner2.png" alt="Publicidad">
 		</div>
         <h1>Formulario de contacto</h1>
-        <form method="post" action="enviar.php">
+        <form method="post" action="enviar.php" onsubmit="redirigir()">
             <label for="nombre">Tu nombre</label>
             <br>
             <input type="text" name="nombre" id="nombre">
@@ -40,7 +41,6 @@
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Borrar">
             </div>
-            <br>
         </form>
 	</main>
     <footer>

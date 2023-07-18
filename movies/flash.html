@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inicio | CineWorld</title>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/peliculas.css">
+</head>
+<body>
+	<header>
+		<p class="logo">CineWorld</p>
+		<nav>
+			<a href="../index.html">Inicio</a>
+			<a href="../peliculas.html">Pel&iacuteculas</a>
+			<a href="../noticias.html">Noticias</a>
+			<a href="../contacto.html">Contacto</a>
+		</nav>
+	</header>
+	<main>
+		<div class="banner">
+			<img src="../img/banner1.jpg" alt="Publicidad">
+		</div>
+        <div class="main-container">
+            <div class="movie-container">
+                <img src="../img/flash.jpg" class="movies-images" alt="Flash">
+                <div class="movie-description">
+                    <p>Los mundos chocan en "Flash" cuando Barry usa sus superpoderes para viajar en el tiempo y cambiar los eventos del pasado. Pero cuando su intento de salvar a su familia altera el futuro sin darse cuenta, Barry queda atrapado en una realidad en la que el general Zod ha regresado, amenazando con la aniquilación, y no hay superhéroes a los que recurrir.</p>
+                </div>
+            </div>
+            <div class="sala">
+                <div class="fila">
+                    <div class="butaca"></div>
+                    <div class="butaca"></div>
+                </div>
+                <div class="fila">
+                    <div class="butaca ocupada"></div>
+                    <div class="butaca ocupada"></div>
+                    <div class="butaca"></div>
+                    <div class="butaca"></div>
+                </div>
+                <div class="fila">
+                    <div class="butaca"></div>
+                    <div class="butaca"></div>
+                    <div class="butaca"></div>
+                    <div class="butaca"></div>
+                </div>
+                <div class="fila">
+                    <div class="butaca"></div>
+                    <div class="butaca"></div>
+                    <div class="butaca"></div>
+                    <div class="butaca"></div>
+                    <div class="butaca"></div>
+                    <div class="butaca ocupada"></div>
+                </div>
+            </div>
+        </div>
+        <form method="post" action="../comprar.php">
+            <label for="nombre">Tu nombre:</label>
+            <br>
+            <input type="text" name="nombre" id="nombre">
+            <br>
+            <label for="email">Tu email:</label>
+            <br>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="asunto">N&uacute;mero de tarjeta:</label>
+            <br>
+            <input type="text" name="tarjeta" id="tarjeta">
+            <br>
+            <div class="buttons">
+                <input type="submit" value="Comprar">
+                <input type="reset" value="Cancelar">
+            </div>
+        </form>
+	</main>
+    <footer>
+        <div class="nav">
+            <a href="../index.html">Inicio</a>
+            <a href="../peliculas.html">Pel&iacuteculas</a>
+            <a href="../noticias.html">Noticias</a>
+            <a href="../contacto.html">Contacto</a>
+        </div>
+        <div class="copyright">&#169; CineWorld</div>
+        <div class="social-media">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </footer>
+</body>
+</html>

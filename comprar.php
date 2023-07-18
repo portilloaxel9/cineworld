@@ -1,20 +1,18 @@
 <?php
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
-$asunto = $_POST['asunto'];
-$mensaje = $_POST['mensaje'];
+$tarjeta = $_POST['tarjeta'];
 
 $para = $email;
+$asunto = "TICKET CINEWORLD";
 $encabezados = "From: $nombre <$email>\r\n";
 $encabezados .= "Reply-To: " . $email . "\r\n";
 $encabezados .= "Content-Type: text/plain; charset=utf-8\r\n";
 
-$contenido = "Nombre: " . $nombre . "\n";
-$contenido .= "Email: " . $email . "\n";
-$contenido .= "Asunto: " . $asunto . "\n";
-$contenido .= "Mensaje: " . $mensaje . "\n";
+$contenido = "Hola" . $nombre . ",\n";
+$contenido .= "Tu ticket de CineWorld ha sido comprado con la tarjeta" . $tarjeta . ".\n";
 
 mail($para, $asunto, $contenido, $encabezados);
-header("Location: mensaje.html");
+header("Location: gracias.html");
 exit;
 ?>
